@@ -1,0 +1,11 @@
+[project]
+name = "accel_data"
+version = "0.0.1"
+dependencies = [
+    "requests",
+    "sqlalchemy",
+    "matplotlib",
+    "pytest",
+    'importlib-metadata; python_version<"3.10"',
+]
+

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: accel_data
+Version: 0.0.1
+Requires-Dist: requests
+Requires-Dist: sqlalchemy
+Requires-Dist: matplotlib
+Requires-Dist: pytest
+Requires-Dist: importlib-metadata; python_version < "3.10"
