@@ -2,22 +2,26 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
 format:
-	black *.py
+	black accel_data/*.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
+	pylint --disable=R,C --ignore-patterns=accel_data/test_.*?py accel_data/*.py
+
+build:
+	python -m build
+	pip install --editable .
 
 test:
 	python -m pytest -cov=main test_main.py -v
 
 extract:
-	python main.py extract
+	accel_data extract
 
 transform_load: 
-	python main.py transform_load
+	accel_data transform_load
 
 query:
-	python main.py general_query
+	accel_data general_query
 
 	
 all: install format lint test extract transform_load query

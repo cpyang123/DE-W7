@@ -1,0 +1,7 @@
+requests
+sqlalchemy
+matplotlib
+pytest
+
+[:python_version < "3.10"]
+importlib-metadata

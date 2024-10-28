@@ -9,3 +9,9 @@ dependencies = [
     'importlib-metadata; python_version<"3.10"',
 ]
 
+[project.scripts]
+accel_data = "accel_data.main:main"
+
+[tool.setuptools.packages.find]
+include = ["accel_data*", "accel_data.mylib"] 
+

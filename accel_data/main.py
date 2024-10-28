@@ -1,12 +1,12 @@
 """handles cli commands"""
 import sys
 import argparse
-from mylib.extract import extract
-from mylib.transform_load import load
-from mylib.query import (
+from .mylib.extract import extract
+from .mylib.transform_load import load
+from .mylib.query import (
     general_query,
 )
-from mylib.config import default_query
+from .mylib.config import default_query
 
 
 def handle_arguments(args):

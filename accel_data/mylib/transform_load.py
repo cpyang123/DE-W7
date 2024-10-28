@@ -3,9 +3,10 @@ from databricks import sql
 import pandas as pd
 from dotenv import load_dotenv
 
-def load(dataset="data/housing_data.csv"):
+def load(dataset="../data/housing_data.csv"):
     """Transforms and Loads data into the local databricks database"""
-    df = pd.read_csv(dataset, delimiter=",")
+    full_path = os.path.join(os.path.dirname(__file__), "../data/housing_data.csv")
+    df = pd.read_csv(full_path, delimiter=",")
     load_dotenv()
     server_h = os.getenv("SERVER_HOST")
     access_token = os.getenv("DATABRICKS_ACCESS_TOKEN")

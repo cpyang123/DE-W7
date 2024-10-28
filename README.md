@@ -1,6 +1,6 @@
 [![Python Application Test with Github Actions for DE-W6](https://github.com/cpyang123/DE-W6/actions/workflows/test.yml/badge.svg)](https://github.com/cpyang123/DE-W6/actions/workflows/test.yml)
 
-# DE-W6 ETL-Query Script
+# DE-W7 ETL-Query Script (now in a package!)
 
 This is a command-line interface (CLI) script that handles various ETL (Extract, Transform, Load) processes and querying operations. The script provides several actions to work with data extraction, loading, and querying, using a set of predefined commands.
 
@@ -18,19 +18,37 @@ Run the script with one of the supported actions. The available actions are:
 - `general_query`: Run a general query. You can specify a custom query or use the default one.
 
 
+### Building Package:
+```bash
+python -m build
+```
+
+### Installing Package:
+```bash
+cd dist
+pip install accel_data-0.0.1.tar.gz
+```
+
+or optionally if you'd  like to be in a development environment:
+```bash
+pip install --editable .
+```
+
+
+
 ### Example Commands:
 
 1. **Extract Data:**
    ```bash
-   python main.py extract
+   accel_data extract
    ```
 2. **Transform and Load Data:**
    ```bash
-   python main.py transform_load
+   accel_data transform_load
    ```
 3. **Run a General Query:**
    ```bash
-   python main.py general_query "SELECT * FROM table_name"
+   accel_data general_query "SELECT * FROM table_name"
    ```
 
 If no custom query is provided, or if "default" is specified, the script will run the default query.

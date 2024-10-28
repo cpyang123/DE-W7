@@ -1,0 +1,2 @@
+[console_scripts]
+accel_data = accel_data.main:main

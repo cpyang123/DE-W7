@@ -4,7 +4,7 @@ import subprocess
 def test_extract():
     """tests extract()"""
     result = subprocess.run(
-        ["python", "main.py", "extract"],
+        ["accel_data", "extract"],
         capture_output=True,
         text=True,
         check=True,
@@ -16,7 +16,7 @@ def test_extract():
 def test_transform_load():
     """tests transfrom_load"""
     result = subprocess.run(
-        ["python", "main.py", "transform_load"],
+        ["accel_data", "transform_load"],
         capture_output=True,
         text=True,
         check=True,
@@ -28,7 +28,7 @@ def test_transform_load():
 def test_general_query():
     """tests general_query"""
     result = subprocess.run(
-        ["python", "main.py", "general_query"],
+        ["accel_data", "general_query"],
         capture_output=True,
         text=True,
         check=True,
