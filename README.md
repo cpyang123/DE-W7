@@ -1,4 +1,4 @@
-[![Python Application Test with Github Actions for DE-W6](https://github.com/cpyang123/DE-W6/actions/workflows/test.yml/badge.svg)](https://github.com/cpyang123/DE-W6/actions/workflows/test.yml)
+[![Python Application Test with Github Actions for DE-W7](https://github.com/cpyang123/DE-W7/actions/workflows/test.yml/badge.svg)](https://github.com/cpyang123/DE-W7/actions/workflows/test.yml)
 
 # DE-W7 ETL-Query Script (now in a package!)
 
