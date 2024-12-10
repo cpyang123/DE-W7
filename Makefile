@@ -24,4 +24,4 @@ query:
 	accel_data general_query
 
 	
-all: install format lint test extract transform_load query
+all: install format lint build test extract transform_load query
